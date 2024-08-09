@@ -11,7 +11,7 @@ ENV PYTHONUNBUFFERED 1
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-FROM dbeaver/cloudbeaver-ee:latest
+FROM dbeaver/cloudbeaver:latest
 RUN groupadd cloudbeaver
 RUN useradd -ms /bin/bash -g cloudbeaver cloudbeaver
 RUN chown -R cloudbeaver ./
