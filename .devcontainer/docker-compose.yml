@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   app:
+    container_name: cloudbeaver_client
     build: .
       # context: ..
       # dockerfile: .devcontainer/Dockerfile
@@ -21,6 +22,7 @@ services:
      - 8978:8978
 
   db:
+    container_name: db_server
     image: postgres:latest
     restart: unless-stopped
     volumes:
