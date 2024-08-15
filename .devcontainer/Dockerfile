@@ -16,7 +16,6 @@ RUN groupadd cloudbeaver
 RUN useradd -ms /bin/bash -g cloudbeaver cloudbeaver
 RUN chown -R cloudbeaver ./
 USER cloudbeaver
-
 EXPOSE 8978
 
 
